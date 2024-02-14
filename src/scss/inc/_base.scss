@@ -1,5 +1,6 @@
 body {
   font-family: $main-font-family;
+  overflow-x: hidden;
 }
 
 h1,
@@ -9,4 +10,21 @@ h4,
 h5,
 h6 {
   font-family: $title-font-family;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: bisque;
+}
+
+.external-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: rgb(255, 208, 151);
 }
