@@ -1,10 +1,11 @@
 @import 'inc/variables';
 @import 'inc/response';
+@import 'inc/base';
 
 //components
+@import 'components/navbar';
 @import 'components/buttons';
 
 //inc
-@import 'inc/base';
 @import 'inc/fonts';
 @import 'inc/helpers';

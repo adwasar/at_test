@@ -1,0 +1,24 @@
+.navbar {
+  height: 120px;
+  padding-top: 48px;
+  @include v-md {
+    height: 80px;
+    padding-top: 26px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    cursor: pointer;
+    @include v-md {
+      height: 26px;
+    }
+  }
+
+  &__burger {
+    cursor: pointer;
+  }
+}
