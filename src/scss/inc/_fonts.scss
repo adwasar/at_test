@@ -9,3 +9,20 @@
   src: url('/src/assets/fonts/CormorantGaramond-Light.ttf');
   font-weight: 300;
 }
+
+.title {
+  margin: 0;
+  font-size: 64px;
+  line-height: 62px;
+  font-family: 'CormorantGaramond';
+  font-weight: 300;
+  text-transform: uppercase;
+  @include v-lg {
+    font-size: 42px;
+    line-height: 40px;
+  }
+  @include v-md {
+    font-size: 36px;
+    line-height: 34px;
+  }
+}

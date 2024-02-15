@@ -20,7 +20,7 @@ p {
   margin: 0;
 }
 
-.container {
+._container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
@@ -28,7 +28,7 @@ p {
   box-sizing: content-box;
 }
 
-.external-container {
+._external-container {
   max-width: 1440px;
   margin: 0 auto;
   // background-color: rgb(255, 208, 151);

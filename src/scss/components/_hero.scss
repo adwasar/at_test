@@ -1,0 +1,76 @@
+.hero {
+  display: flex;
+  height: 587px;
+  @include v-lg {
+    height: 420px;
+  }
+  @include v-md {
+    height: 360px;
+  }
+  @include v-sm {
+    height: auto;
+    flex-direction: column;
+  }
+
+  &__picture-container {
+    position: relative;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    @include v-sm {
+      flex: none;
+      height: 270px;
+      display: block;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+  }
+
+  &__picture {
+    position: relative;
+    left: 6px;
+    height: 100%;
+    @include v-lg {
+      left: auto;
+    }
+    @include v-sm {
+      max-width: 360px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    flex: 1;
+  }
+
+  &__title {
+    margin-top: 106px;
+    margin-left: 11px;
+    position: relative;
+    @include v-xl {
+      margin-top: 60px;
+    }
+    @include v-md {
+      margin-top: 30px;
+    }
+    @include v-sm {
+      margin-left: 0;
+      margin-top: 30px;
+    }
+  }
+
+  &__button {
+    position: relative;
+    display: block;
+    margin-top: 80px;
+    margin-left: auto;
+    @include v-lg {
+      margin-top: 40px;
+    }
+    @include v-md {
+      margin-top: 30px;
+    }
+  }
+}
