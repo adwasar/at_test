@@ -1,0 +1,35 @@
+.services-section {
+  padding: 8px 0;
+
+  &__list {
+    width: 100%;
+    display: flex;
+    margin-top: 80px;
+    gap: 20px;
+    justify-content: end;
+    flex-wrap: wrap;
+    @include v-lg {
+      margin: 60px auto 0;
+      justify-content: center;
+      max-width: 500px;
+    }
+    @include v-md {
+      margin: 30px auto 0;
+    }
+  }
+}
+
+.services-item {
+  cursor: pointer;
+
+  &__img {
+    display: block;
+  }
+
+  &__title {
+    margin-top: 20px;
+    font-family: $main-font-family;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+}
