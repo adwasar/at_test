@@ -1,0 +1,76 @@
+.approach-section {
+  padding: 80px 0 104px;
+
+  &__content {
+    display: flex;
+    gap: 81px;
+    @include v-lg {
+      gap: 40px;
+    }
+    @include v-md {
+      gap: 20px;
+    }
+  }
+
+  &__description {
+    flex: 0 0 58%;
+  }
+
+  &__heading {
+    margin-top: 80px;
+    @include v-lg {
+      margin-top: 40px;
+    }
+  }
+
+  &__title {
+    margin-top: 148px;
+    padding-right: 20px;
+    @include v-lg {
+      margin-top: 80px;
+      padding-right: 0;
+    }
+    @include v-md {
+      margin-top: 30px;
+      padding-right: 0;
+    }
+  }
+
+  &__wrapper {
+    margin-top: 150px;
+    padding-bottom: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include v-lg {
+      margin-top: 80px;
+      padding-bottom: 40px;
+    }
+    @include v-md {
+      margin-top: 30px;
+      flex-direction: column;
+      align-items: start;
+      gap: 30px;
+    }
+  }
+
+  &__text {
+    width: 58%;
+    @include v-md {
+      width: 100%;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    cursor: pointer;
+  }
+
+  &__img {
+    width: 100%;
+    background-image: url('/src/assets/photos/basic/approach.png');
+    background-size: cover;
+  }
+}
