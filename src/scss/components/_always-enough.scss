@@ -1,0 +1,55 @@
+.always-enough-section {
+  padding: 80px 0;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    @include v-md {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  &__first-block {
+    padding: 0 40px;
+    flex: 0 0 456px;
+    background-image: url('/src/assets/photos/basic/about-2.png');
+    background-size: cover;
+    background-position: 0% 0%;
+    height: 686px;
+    @include v-lg {
+      padding: 20px;
+      max-width: 340px;
+      flex: 0 0 340px;
+      height: 460px;
+    }
+  }
+
+  &__second-block {
+    width: 100%;
+    img {
+      max-width: 100%;
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      left: 40px;
+      @include v-md {
+        left: 0;
+      }
+    }
+  }
+
+  &__title {
+    margin-top: 221px;
+    @include v-lg {
+      margin-top: 110px;
+    }
+  }
+
+  &__text {
+    margin-top: 145px;
+    @include v-lg {
+      margin-top: 100px;
+    }
+  }
+}

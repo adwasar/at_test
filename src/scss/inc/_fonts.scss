@@ -25,6 +25,10 @@
     font-size: 36px;
     line-height: 34px;
   }
+
+  &_white {
+    color: $light-beige;
+  }
 }
 
 .subtitle {
@@ -42,4 +46,8 @@
   font-weight: 400;
   line-height: 150%;
   letter-spacing: normal;
+
+  &_white {
+    color: $light-beige;
+  }
 }
