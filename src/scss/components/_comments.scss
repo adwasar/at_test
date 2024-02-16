@@ -1,0 +1,70 @@
+.comments-section {
+  padding: 146px 0 160px;
+
+  &__content {
+    display: flex;
+    gap: 30px;
+    @include v-xl {
+      flex-direction: column;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 22px;
+    @include v-md {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__text {
+    flex: 100%;
+    font-size: 12px;
+    line-height: 150%;
+    color: $dark-beige;
+    letter-spacing: 0.1px;
+  }
+}
+
+.comment {
+  min-width: 197px;
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__user-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__user-name {
+    margin: 0;
+    font-family: 'HelveticaNeue';
+    font-size: 12px;
+    color: $c-main;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    line-height: 170%;
+  }
+
+  &__message {
+    margin-top: 24px;
+    line-height: 130%;
+    font-size: 10px;
+    color: $dark-beige;
+    letter-spacing: 0.2px;
+  }
+
+  &__user-position {
+    margin: 2px 0 0;
+    font-family: 'HelveticaNeue';
+    font-size: 7px;
+    line-height: 8px;
+    letter-spacing: 0.2px;
+    color: $c-main;
+    text-transform: uppercase;
+  }
+}
