@@ -1,0 +1,35 @@
+.footer {
+  padding: 80px 0;
+  @include v-md {
+    padding: 30px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    @include v-sm {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-list {
+    display: flex;
+    gap: 66px;
+    font-family: 'HelveticaNeue';
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: $dark-red;
+    @include v-md {
+      gap: 20px;
+    }
+  }
+}
