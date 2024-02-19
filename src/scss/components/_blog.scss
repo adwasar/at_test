@@ -124,9 +124,9 @@
   }
 
   &__text {
-    width: 60%;
-    text-align: end;
+    width: 37%;
     @include v-md {
+      text-align: end;
       width: 100%;
     }
   }
