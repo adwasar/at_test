@@ -1,0 +1,133 @@
+.blog-section {
+  &__heading {
+    margin: 96px 0 87px;
+    @include v-md {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__wide-gallery {
+    display: grid;
+    justify-content: start;
+    align-items: start;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    height: 100%;
+    width: max-content;
+    overflow: hidden;
+    @include v-xl {
+      display: none;
+    }
+
+    img {
+      height: 100%;
+      @include v-xxl {
+        width: 180px;
+      }
+    }
+
+    p {
+      color: $light-beige;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -150%);
+      text-transform: uppercase;
+      font-size: 10px;
+    }
+  }
+
+  &__tight-gallery {
+    position: relative;
+    display: none;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    @include v-xl {
+      margin: auto;
+      display: grid;
+      justify-content: start;
+      align-items: center;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    img {
+      height: 100%;
+      @include v-xxl {
+        width: 100%;
+      }
+    }
+
+    p {
+      color: $light-beige;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -150%);
+      text-transform: uppercase;
+      font-size: 10px;
+    }
+  }
+
+  &__footer {
+    padding: 40px 0;
+    img {
+      display: block;
+      margin-left: auto;
+      cursor: pointer;
+    }
+  }
+}
+
+.blog-content {
+  margin-left: 50%;
+  width: 50%;
+  max-width: 800px;
+  align-items: end;
+  @include v-xl {
+    margin: auto;
+    width: 100%;
+    align-items: center;
+  }
+
+  &__title {
+    text-align: end;
+    padding-top: 82px;
+    @include v-xxl {
+      padding-top: 40px;
+    }
+    @include v-md {
+      padding-top: 0;
+    }
+  }
+
+  &__wrapper {
+    margin-top: 82px;
+    padding-bottom: 42px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    @include v-md {
+      margin-top: 30px;
+      padding-bottom: 30px;
+      flex-direction: column;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin-left: auto;
+  }
+
+  &__text {
+    width: 60%;
+    text-align: end;
+    @include v-md {
+      width: 100%;
+    }
+  }
+}
